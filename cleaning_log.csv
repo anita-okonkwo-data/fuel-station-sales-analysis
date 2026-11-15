@@ -1,0 +1,12 @@
+step,rows_affected,action
+Raw rows loaded,36774,Starting point
+Duplicate transaction IDs,436,"Removed, first copy kept"
+Inconsistent product labels,1220,Mapped to one standard name
+Inconsistent payment labels,1804,Trimmed spaces and standardised case
+Amount stored as text with ₦ symbol,728,"Symbol and commas stripped, converted to number"
+Rejected: missing station,143,Moved to rejected_rows.csv for review
+Rejected: missing payment method,364,Moved to rejected_rows.csv for review
+Rejected: missing quantity,218,Moved to rejected_rows.csv for review
+Rejected: zero or negative quantity,60,Moved to rejected_rows.csv for review
+Rejected: implausible quantity,23,Moved to rejected_rows.csv for review
+Clean rows kept,35536,96.6% of raw rows
